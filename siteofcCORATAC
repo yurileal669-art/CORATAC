@@ -3850,17 +3850,17 @@ font-size: 36px;
 <div class="product-card">
 <h3>ÁGUA MINERAL 1,5L</h3>
 <div class="product-examples">
-<h4>Produtos disponíveis:</h4>
-<p style="text-align: center; color: #666; padding: 20px;">Não há dados disponíveis para esta categoria.</p>
+<h4>Escolha a marca:</h4>
+<div class="brand-selection">
+<div class="brand-item" onclick="selectBrand('agua-mineral-1-5l', 'NOVA ÁGUA', 5.00)">
+<span class="brand-name">NOVA ÁGUA</span>
+<span class="brand-price">R$ 5,00</span>
 </div>
 </div>
-
-<!-- Água Mineral 2L -->
-<div class="product-card">
-<h3>ÁGUA MINERAL 2L</h3>
-<div class="product-examples">
-<h4>Produtos disponíveis:</h4>
-<p style="text-align: center; color: #666; padding: 20px;">Não há dados disponíveis para esta categoria.</p>
+</div>
+<div class="selected-brand" id="selected-agua-mineral-1-5l" style="display: none;">
+<p><strong>Selecionado:</strong> <span id="brand-name-agua-mineral-1-5l"></span> - <span id="brand-price-agua-mineral-1-5l"></span></p>
+<button class="add-to-cart-btn" onclick="addSelectedToCart('agua-mineral-1-5l')">Adicionar ao Carrinho</button>
 </div>
 </div>
 
@@ -4095,7 +4095,6 @@ const productPrices = {
 'Refrigerante 2 Litros': 8.90,
 'Água Mineral 510ml': 1.50,
 'Água Mineral 1,5L': 2.20,
-'Água Mineral 2L': 2.90,
 'Sucos de Pacote 200ml': 2.80,
 'Sucos de Garrafa 500ml': 4.20,
 'Sucos de Caixa 1L': 5.90,
